@@ -1,13 +1,12 @@
 import "./App.css";
-import { Drawer, FacultyDash, StudentDash } from "./Components";
 import Login from "./Components/Login/Login";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import { useLocalContext } from "./Context/context";
 import Home from "./Components/Home";
 import SingleClass from "./Components/Classes/SingleClass";
 
 function App() {
-  const { loggedInMail, classesArray } = useLocalContext();
+  const { classesArray } = useLocalContext();
 
   return (
     <Routes>

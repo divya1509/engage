@@ -43,7 +43,7 @@ export function ContextProvider({ children }) {
         var credential = error.credential;
         setLoggedInUser(null);
         setLoggedInMail(null);
-        console.log("login Failed");
+        console.log("login Failed",error);
         // ...
       });
   };

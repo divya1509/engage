@@ -10,7 +10,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import { DropzoneDialog } from "material-ui-dropzone";
 import dataBase, { storage } from "../../Lib/firebase";
-import { useLocalContext } from "../../Context/context";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;

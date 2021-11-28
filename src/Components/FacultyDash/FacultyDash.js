@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Classes from "../Classes/Classes";
 import dataBase from "../../Lib/firebase";
 import { useLocalContext } from "../../Context/context";
@@ -16,12 +16,12 @@ function FacultyDash() {
       .then((data) => {
         data.docs.map((tempData) => {
           // console.log(tempData.data().owner == loggedInMail);
-          if (tempData.data().owner == loggedInMail)
+          if (tempData.data().owner === loggedInMail)
             tempClassData = [...tempClassData, tempData.data()];
         });
         console.log(tempClassData);
         setClassesArray(tempClassData);
-      });
+  });
   }, []);
 
   return (

@@ -27,60 +27,6 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-const Nav = styled.nav`
-  max-width: 1440px;
-  margin: auto;
-  padding: 16px 0 16px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  & > a {
-    width: 135px;
-    height: 34px;
-    @media (max-width: 768px) {
-      padding: 0 5px;
-    }
-    @media (max-width: 640px) {
-      padding: 0 5px;
-      width: 38%;
-    }
-  }
-`;
-
-const Join = styled.a`
-  font-size: 16px;
-  padding: 10px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition-duration: 367ms;
-  color: rgba(0, 0, 0, 0.8);
-  margin-right: 12px;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-    color: rgba(0, 0, 0, 0, 0.1);
-    text-decoration: none;
-  }
-`;
-
-const SignIn = styled.a`
-  box-shadow: inset 0 0 0 1px #0a66c2;
-  color: #0a66c2;
-  border-radius: 24px;
-  transition-duration: 367ms;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 40px;
-  padding: 10px 24px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  &:hover {
-    background-color: rgba(112, 181, 249, 0.15);
-    color: #0a66c2;
-    text-decoration: none;
-  }
-`;
 
 const Section = styled.section`
   align-content: start;

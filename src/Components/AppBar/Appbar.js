@@ -11,7 +11,6 @@ import React from "react";
 import { useStyles } from "./style";
 import { CreateClass, JoinClass } from "..";
 import { useLocalContext } from "../../Context/context";
-import { Navigate } from "react-router";
 import { Link } from "react-router-dom";
 
 function Appbar({ children }) {

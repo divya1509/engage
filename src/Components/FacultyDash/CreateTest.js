@@ -38,7 +38,6 @@ export default function CreateTest({ classData }) {
   const [quesType, setQuesType] = useState("radio");
   const [title, setTitle] = useState("Test Title");
   const [description, setDescription] = useState("Test Description");
-  const [quesReq, setQuesReq] = useState("true");
 
   //initial
   useEffect(() => {
@@ -71,7 +70,7 @@ export default function CreateTest({ classData }) {
   const saveQuestions = () => {
     setQuestions(questions);
     //db push
-    const currSet = {
+    let currSet = {
       title: { title },
       description: { description },
       questions: { questions },
@@ -175,11 +174,11 @@ export default function CreateTest({ classData }) {
     return result;
   };
 
-  const showAsQuestion = (i) => {
-    let qs = [...questions];
-    qs[i].open = false;
-    setQuestions(qs);
-  };
+  // const showAsQuestion = (i) => {
+  //   let qs = [...questions];
+  //   qs[i].open = false;
+  //   setQuestions(qs);
+  // };
 
   const addOption = (i) => {
     var optionsOfQuestion = [...questions];

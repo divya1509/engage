@@ -1,7 +1,5 @@
-import { Avatar } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
-import { useLocalContext } from "../../Context/context";
 import "./Classes.css";
 const Classes = ({ classData }) => {
   return (
