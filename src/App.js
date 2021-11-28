@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Drawer, FacultyDash, StudentDash } from "./Components";
+import Login from "./Components/Login/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocalContext } from "./Context/context";
+import Home from "./Components/Home";
+import SingleClass from "./Components/Classes/SingleClass";
 
 function App() {
+  const { loggedInMail, classesArray } = useLocalContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" exact element={<Login />}></Route>
+      <Route path="/home" exact element={<Home />} />
+      {classesArray.map((item, index) => (
+        <Route
+          key={index}
+          exact
+          path={`/home/${item.id}`}
+          element={<SingleClass classData={item} />}
+        />
+      ))}
+    </Routes>
   );
 }
 

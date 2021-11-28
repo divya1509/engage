@@ -1,0 +1,6 @@
+export {default as Drawer} from './Drawer/Drawer'
+export {default as Header} from './AppBar/Appbar'
+export {default as CreateClass} from './CreateClass/CreateClass'
+export {default as JoinClass} from './JoinClass/JoinClass'
+export {default as FacultyDash} from './FacultyDash/FacultyDash'
+export {default as StudentDash} from './StudentDash/StudentDash'

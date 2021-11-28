@@ -1,0 +1,35 @@
+.amt {
+    background-color: #f7f1e3;
+    border: 0.0625rem solid #dadce0;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .amt__top {
+    display: flex;
+    align-items: center;
+  }
+  .amt__top > * {
+    margin-left: 10px;
+  }
+  .amt__Cnt {
+    padding: 0.5rem 0;
+
+  }
+  .amt__txt {
+    margin: 10px 15px;
+  }
+  .amt__img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    margin-left: 10px;
+  }
+
+.btn-style{
+  margin-right: 22% !important;
+  margin-top: 15% ! important;
+}
