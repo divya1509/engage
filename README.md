@@ -17,7 +17,8 @@ The test feature is implemented for multiple choice questions having single or m
 - ReactJs
 - Firebase
 - Material-UI
-- UUId
+- React Router
+- Context API
 
 ## Steps to run the project:
 Download/ Clone the project repo and run the following commands-
