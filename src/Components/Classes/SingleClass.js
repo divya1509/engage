@@ -4,8 +4,10 @@ import "./SingleClass.css";
 import CreateASS from "../FacultyDash/CreateAss";
 import CreateTest from "../FacultyDash/CreateTest";
 import Post from "../Posts/Post";
+import { useLocalContext } from "../../Context/context";
 
 const SingleClass = ({ classData }) => {
+  const { userType } = useLocalContext();
   return (
     <div className="main">
       <div className="main__wrapper">
